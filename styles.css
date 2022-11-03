@@ -1,0 +1,112 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro',sans-serif;
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: #000000;
+    background:#EDEDED;
+}
+
+/* LAYOUT */
+
+ .container {
+    width: 100%;
+    max-width: 35em;
+    min-height: 100vh;
+    margin: 0 auto;
+    background-color: #EDEDED; 
+    border-radius: 0.9rem;
+} 
+
+
+.hero {
+    border-bottom: 1px solid #C6C6C6;
+    display: flex;
+    background-color: #ffffff;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.content {
+    padding: 0.6rem  0 0 0.9rem;
+}
+
+
+.post {
+    margin-bottom: 2rem;
+    padding-bottom: 0.62em;
+    background-color: #ffffff;
+    width: 100%;
+}
+
+
+.col {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+
+.control-bar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 2.4em;
+}
+
+
+
+/* TYPOGRAPHY */
+.name {
+    font-size: 1.1rem;
+}
+
+
+.name .location {
+    display: block;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+/* IMAGES */
+img {
+    max-width: 100%;
+}
+
+#image {
+    object-fit: cover;
+    width: 100%;
+}
+
+.avatar {
+    width: 2.13em;
+    height: 2.13em;
+    border-radius: 50%;
+    margin-right: 0.7rem;
+ } 
+
+
+ /* LOGO */
+
+.logo {
+    width: 7.5em;
+    margin-right: 0.5rem;
+}
+
+/* MEDIA-QUERY */
+
+@media (min-width: 35em){
+    .control-bar{
+        max-width: 2.95em;
+    }
+}
